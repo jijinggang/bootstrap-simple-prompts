@@ -27,11 +27,11 @@
                 
         
         if (typeof warning === "undefined" || warning == false) {
-            if (confirm) markup += '<button type="button" class="btn btn-default leave cancel">Cancel</button>';
-            markup += '<button type="button" class="btn btn-primary leave ok" data-dismiss="modal">Ok</button>'
+            markup += '<button type="button" class="btn btn-primary leave ok" data-dismiss="modal">确定</button>';
+            if (confirm) markup += '<button type="button" class="btn btn-default leave cancel">取消</button>';
         } else {
-            if (confirm) markup += '<button type="button" class="btn btn-primary leave cancel">Cancel</button>';
-            markup += '<button type="button" class="btn btn-danger leave ok" data-dismiss="modal">Ok</button>'
+            markup += '<button type="button" class="btn btn-danger leave ok" data-dismiss="modal">确定</button>';
+            if (confirm) markup += '<button type="button" class="btn btn-primary leave cancel">取消</button>';
         }
         markup += '\
             </div> \
